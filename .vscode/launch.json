@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      { 
+        // name for debug settings:
+        "name": "Debug (OpenOCD)",
+        // use cortex-debug:
+        "type": "cortex-debug",
+        "request": "launch",
+        // use openocd for connection:
+        "servertype": "openocd",
+        "cwd": "${workspaceFolder}",
+        // where program will stop (at entrance to main function):
+        "runToEntryPoint":"main",
+        "showDevDebugOutput": "both",
+        // before debugging build program (see task.json):
+        "preLaunchTask": "Make Firmware",
+        // path for .elf binary:
+        "executable": "${workspaceFolder}/bin/main.elf",
+        // turn on live variables:
+        "liveWatch": {
+          "enabled": true,
+          "samplesPerSecond": 4
+        },
+        "configFiles": [
+          "${workspaceFolder}/openocd.cfg"
+        ],
+        // .svd file name that you want to use:
+        "svdFile":"STM32F411.svd"
+      }
+    ]
+  }

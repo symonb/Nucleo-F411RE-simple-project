@@ -1,0 +1,5 @@
+C:/Users/symon/Documents/my_project/build/CMakeFiles/main.elf.dir
+C:/Users/symon/Documents/my_project/build/CMakeFiles/main.bin.dir
+C:/Users/symon/Documents/my_project/build/CMakeFiles/main.hex.dir
+C:/Users/symon/Documents/my_project/build/CMakeFiles/edit_cache.dir
+C:/Users/symon/Documents/my_project/build/CMakeFiles/rebuild_cache.dir

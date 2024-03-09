@@ -1,0 +1,153 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/tools/CMake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:19 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:19 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/tools/Toolchain GNU Arm/10 2021.10/bin/arm-none-eabi-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      c:/tools/toolchain gnu arm/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: c:/tools/toolchain gnu arm/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib\\libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x2c): undefined reference to `_exit'
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:19 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/tools/Toolchain GNU Arm/10 2021.10/bin/arm-none-eabi-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/symon/Documents/my_project/build/CMakeFiles/3.29.0-rc1/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1141 (message)"
+      - "C:/tools/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:19 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-none-eabi-gcc.exe (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)
+      Copyright (C) 2020 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "C:/tools/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:19 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/symon/Documents/my_project/build/CMakeFiles/CMakeScratch/TryCompile-48548x"
+      binary: "C:/Users/symon/Documents/my_project/build/CMakeFiles/CMakeScratch/TryCompile-48548x"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/symon/Documents/my_project/build/CMakeFiles/CMakeScratch/TryCompile-48548x'
+        
+        Run Build Command(s): C:/tools/CMake/bin/cmake.exe -E env VERBOSE=1 C:/tools/OpenOCD/bin/mingw32-make.exe -f Makefile cmTC_c637c/fast
+        C:/tools/OpenOCD/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c637c.dir\\build.make CMakeFiles/cmTC_c637c.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/symon/Documents/my_project/build/CMakeFiles/CMakeScratch/TryCompile-48548x'
+        Building C object CMakeFiles/cmTC_c637c.dir/CMakeCCompilerABI.c.obj
+        C:\\tools\\TOOLCH~1\\102021~1.10\\bin\\AR19DD~1.EXE   -std=gnu17   -v -o CMakeFiles\\cmTC_c637c.dir\\CMakeCCompilerABI.c.obj -c C:\\tools\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=C:\\tools\\TOOLCH~1\\102021~1.10\\bin\\AR19DD~1.EXE
+        Target: arm-none-eabi
+        Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+        COLLECT_GCC_OPTIONS='-std=gnu17' '-v' '-o' 'CMakeFiles\\cmTC_c637c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+         c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix c:\\tools\\toolch~1\\102021~1.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot c:\\tools\\toolch~1\\102021~1.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ C:\\tools\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles\\cmTC_c637c.dir\\CMakeCCompilerABI.c.obj -std=gnu17 -version -o C:\\Users\\symon\\AppData\\Local\\Temp\\ccG4F8Zb.s
+        GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "c:/tools/toolch~1/102021~1.10/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+        ignoring nonexistent directory "c:\\tools\\toolch~1\\102021~1.10\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+        ignoring duplicate directory "c:/tools/toolch~1/102021~1.10/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+        ignoring duplicate directory "c:/tools/toolch~1/102021~1.10/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+        ignoring nonexistent directory "c:\\tools\\toolch~1\\102021~1.10\\bin\\../arm-none-eabi/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         c:\\tools\\toolch~1\\102021~1.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include
+         c:\\tools\\toolch~1\\102021~1.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+         c:\\tools\\toolch~1\\102021~1.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+        End of search list.
+        GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+        COLLECT_GCC_OPTIONS='-std=gnu17' '-v' '-o' 'CMakeFiles\\cmTC_c637c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+         c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_c637c.dir\\CMakeCCompilerABI.c.obj C:\\Users\\symon\\AppData\\Local\\Temp\\ccG4F8Zb.s
+        GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+        COMPILER_PATH=c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/;c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/;c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/tools/toolch~1/102021~1.10/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-std=gnu17' '-v' '-o' 'CMakeFiles\\cmTC_c637c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+        Linking C executable cmTC_c637c
+        C:\\tools\\CMake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_c637c.dir\\link.txt --verbose=1
+        C:\\tools\\TOOLCH~1\\102021~1.10\\bin\\AR19DD~1.EXE  -v CMakeFiles/cmTC_c637c.dir/CMakeCCompilerABI.c.obj -o cmTC_c637c
+        Using built-in specs.
+        COLLECT_GCC=C:\\tools\\TOOLCH~1\\102021~1.10\\bin\\AR19DD~1.EXE
+        COLLECT_LTO_WRAPPER=c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+        Target: arm-none-eabi
+        Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+        COMPILER_PATH=c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/;c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/;c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/tools/toolch~1/102021~1.10/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c637c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+         c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\symon\\AppData\\Local\\Temp\\cc6tgQjn.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=c:\\tools\\toolch~1\\102021~1.10\\bin\\../arm-none-eabi -X -o cmTC_c637c c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/crti.o c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/crtbegin.o c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1 -Lc:/tools/toolch~1/102021~1.10/bin/../lib/gcc -Lc:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Lc:/tools/toolch~1/102021~1.10/bin/../arm-none-eabi/lib CMakeFiles/cmTC_c637c.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/crtend.o c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/crtn.o
+        c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: c:/tools/toolch~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib\\libc.a(lib_a-exit.o): in function `exit':
+        exit.c:(.text.exit+0x2c): undefined reference to `_exit'
+        collect2.exe: error: ld returned 1 exit status
+        CMakeFiles\\cmTC_c637c.dir\\build.make:97: recipe for target 'cmTC_c637c' failed
+        mingw32-make.exe[1]: *** [cmTC_c637c] Error 1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/symon/Documents/my_project/build/CMakeFiles/CMakeScratch/TryCompile-48548x'
+        Makefile:126: recipe for target 'cmTC_c637c/fast' failed
+        mingw32-make.exe: *** [cmTC_c637c/fast] Error 2
+        
+      exitCode: 2
+...
